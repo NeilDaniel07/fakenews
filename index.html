@@ -1,0 +1,819 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Don't Fake It!</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%236b647d%22></rect><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2290%22>🤨</text></svg>" />
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+
+  <body>
+
+    <canvas id="canvas"> </canvas>
+    <p id="top"></p>
+
+      <!-- Top Bar -->
+    <div>
+
+        <img id="logo" src="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%236b647d%22></rect><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2290%22>🤨</text></svg>" />
+
+        <h1 id="title"> Don't Fake It! </h1>
+
+        <div id="header"></div>
+
+        <table id="contents" class="contents">
+
+            <tr>
+                <td> <h3> <a href="#top"> Intro </a> </h3> </td>
+                <td> <h3> <a href="#mission"> Our Mission </a> </h3> </td>
+                <td> <h3> <a href="#anchor"> How it Works </a> </h3> </td>
+                <td> <h3> <a href="#pp"> About Us </a> </h3> </td>
+                <td> <button id="try"> <a href="#wall"> Try Now </a> </button> </td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+    <!-- Top Section -->
+    <div id="topSection">
+
+        <h2 id="title1"> Reinventing <br> Fact Checking </h2>
+        <p id="sectionText"> Introducing NewsAI,<br>the latest in information <br>verification </p>
+
+        <button id="button1"> <a href="#wall"> Try Now </a> </button>
+
+
+    </div>
+
+
+
+
+    <!-- Mission -->
+    <div id="sectionTwo">
+
+    <p id="mission"></p>
+    <h2 id="title2"> Our Mission </h2>
+
+    <h4 id="fakeNews"> In Recent Days, <br> There Has Been an <b>Explosion</b> <br> of <b> Misinformation</b></h4>
+
+      <h2 id="declare"> We Seek to <b> End</b> it</h2>
+    </div>
+
+
+
+
+    <!-- How it works AND about us-->
+     <div id="sectionThree">
+
+       <p id="anchor"></p>
+    <h1 id="title3"> Revolutionizing <br> an Industry </h1>
+     <img id="network" onmouseover="popup()" src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Neural_network.svg" id="network">
+
+    <p id="popup"> Image credit to Dake and Mysid. Some resizing. <a href="https://creativecommons.org/licenses/by/1.0/deed.en"> Attribution Link </a></p>
+
+       <p id="rant"> Utilizing the most recent advancements in machine learning and AI, AI NewsAI teaches itself the differences between real and fake news, becoming better at it over time.</p>
+
+      <table id="table">
+
+        <tr>
+          <td> <h4 class="label"> Cutting Edge Tecnology</h4> </td>
+          <td> <h4 class="label"> Superior Data Set Aquisition </h4> </td>
+          <td><h4 class="label"> Accurate Results Guaranteed</h4></td>
+        </tr>
+
+        <tr>
+          <td><p class="label1"> Using Google's top of the line services, NewsAI constantly being updated to stay ahead of the curve.</p></td>
+
+          <td><p class="label1"> This is our most extensive data set yet, carefully collected for optimal results.</p> </td>
+
+          <td> <p class="label1"> Our most recent tests show massive leaps in detection rates, skyrocketing as high as 69%.</p></td>
+        </tr>
+
+      </table>
+
+       <h1 id="us"> About Us <p id="pp"> </p></h1>
+       <p id="intro"> Hi! We're a team of threee sophomores who are interested in using our coding skills to make the world a better place. When we heard of the Washington Post Challenge sponsered by <a href="https://eastbanctech.com/">Eastbanc Technologies</a>, we were immediately enthralled. The idea of using AI to do something basic yet so necessary at this time immediately caught our attention. <br> Thanks to <a href="https://formito.com/tools/favicon"> Formito for their logo designing tools! </a></p>
+
+       <p id="credit"> ©️ Neil Daniel, Brandon Rhodes & Dylan Han 2022 </p>
+
+       <h1 id="wall"> Using News Bot</h1>
+
+        <p id="pol"> <a href="https://drive.google.com/file/d/1ufexwTUtqk9IJ_llt2TZRhKDU6d2tkG2/view?usp=sharing"> Click this link to learn how to use NewsAI! </a> <br>
+
+          <a href="https://docs.google.com/spreadsheets/d/1HX6UZh2fUferLxzsiKPvLw5aaZXgP9pvtpo9X3rRnUc/edit?usp=sharing"> Click this link to access NewsAI Data! </a> <br>
+
+
+       <a href="https://colab.research.google.com/drive/15G1DpoPhWmZ5nOLpeS7O-DHSaCcdvHOW?usp=sharingo"> Click this link to access NewsAI! </a>
+        </p>
+
+     </div>
+
+
+    <button id="backToTop"> <a href="#top"> &#x2191 </a></button>
+  </body>
+
+
+  <!-- Misc.-->
+  <style>
+
+    a {
+      text-decoration: none;
+      color: initial;
+    }
+
+    #top {
+
+      position: absolute;
+      top: 0%;
+    }
+
+    #canvas {
+
+      position: fixed;
+      left:0px;
+      top:10%;
+      width: 100%;
+      height: 100%;
+      z-index:-100;
+      opacity: 0.3;
+    }
+
+    #backToTop {
+
+      position: fixed;
+      border-radius: 100%;
+      width: 5%;
+      font-size: 200%;
+      padding: 1%;
+      height: 5vw;
+      left: 95%;
+      top: 90%;
+      opacity: 0;
+      z-index: 1000000;
+    }
+
+    html, body {
+
+      height: 100%;
+      scroll-behavior: smooth;
+    }
+
+    * {
+
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+
+  <!-- Top Bar -->
+  <style>
+
+    #header {
+
+      position: fixed;
+      width: 100%;
+      height: 10%;
+      background-color: rgb(255,255,255);
+      z-index: 10000;
+      left: 0px;
+      top: 0px;
+    }
+
+    #title {
+
+      position: fixed;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      left: 12%;
+      top: 2.5%;
+      font-size: 200%;
+      color: rgba(19,41,75, 0.9);
+      z-index: 10001;
+    }
+
+    #logo {
+
+      position: fixed;
+      left: 3%;
+      top: 1%;
+      width: 8%;
+      height: 8%;
+      z-index: 10001;
+    }
+
+    #contents {
+
+      position: fixed;
+      left: 35%;
+      top: 2.5%;
+      width: 60%;
+      z-index: 10001;
+      font-size: 125%;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    h3 > a {
+
+      z-index: 10001;
+      font-size: 125%;
+    }
+
+    h3 > a:hover {
+
+      animation-name: expand;
+      animation-duration: 1000ms;
+      animation-iteration-count: 1;
+    }
+
+    td > button > a:hover {
+
+      animation-name: expand;
+      animation-duration: 1000ms;
+      animation-iteration-count: 1;
+    }
+
+    @keyframes expand {
+
+      0% {font-size: 125%; color: black}
+      50% {font-size: 150%; color: white}
+      100% {font-size: 125%; color: black}
+    }
+
+    #try {
+
+      background-color: orange;
+      color: black;
+      font-family:arial;
+      font-size: 100%;
+      border-radius: 30%;
+      border: 0px;
+      padding: 5%;
+      z-index: -1;
+    }
+
+  </style>
+
+  <!-- Top Section -->
+  <style>
+
+    #topSection {
+
+        position: relative;
+        font-family: "arial";
+        top: 25%;
+        width: 40%;
+        left: 20%;
+        z-index: 1000;
+      }
+
+    #title1 {
+
+      font-size: 400%;
+      color: #13294B;
+      z-index: 1000;
+    }
+
+    #sectionText {
+
+      position: absolute;
+      font-size: 250%;
+      top: 130%;
+      z-index: 1000;
+    }
+
+    #button1 {
+
+      position: absolute;
+      top: 250%;
+      background-color: orange;
+      color: black;
+      font-family:arial;
+      font-size: 150%;
+      border-radius: 10%;
+      border: 0px;
+      padding: 1%;
+      z-index: 1000;
+    }
+
+    #button1 > a:hover {
+
+      animation-name: expand1;
+      animation-duration: 1000ms;
+      animation-iteration-count: 1;
+    }
+
+    @keyframes expand1 {
+      0% {font-size: 100%; color: black;}
+      50% {font-size: 200%; color: white;}
+      100% {font-size: 100%; color: black;}
+    }
+
+  </style>
+
+  <!-- This one is for section 2-->
+  <style>
+
+    #sectionTwo {
+
+      position: relative;
+      top: 85%;
+      background-color:rgba(19,41,75,0.8);
+      width: 100%;
+      height: 70%;
+      z-index: 59;
+    }
+
+    #title2 {
+
+      position: absolute;
+      left: 5%;
+      top: 5%;
+      font-family: "arial";
+      font-size: 400%;
+      z-index: 60;
+      color: rgba(255,255,255,0.9);
+    }
+
+    #fakeNews > b {
+
+      font-size: 250%;
+    }
+    #fakeNews {
+
+      position: absolute;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 200%;
+      color: orange;
+      left: 5%;
+      top: 35%;
+    }
+
+    #fakeNews:hover {
+
+      animation-name: bomb;
+      animation-duration: 1000ms;
+      animation-iteration-count: 1;
+    }
+
+    #pol {
+      position: absolute;
+      font-size: 200%;
+      top: 500%;
+      left: 30%;
+    }
+
+    @keyframes bomb {
+
+      0% {font-size: 200%}
+      50% {font-size: 250%}
+      100% {font-size: 200%}
+    }
+
+    #mission {
+      position: absolute;
+      top: -30%;
+    }
+    #declare {
+
+      position: absolute;
+      font-family: "arial";
+      left: 57.5%;
+      top: 65%;
+      color: white;
+      font-size: 400%;
+    }
+  </style>
+
+  <!-- Section 3-->
+  <style>
+
+    #wall {
+
+      position: absolute;
+      top: 450%;
+      font-size: 300%;
+      left: 45%;
+    }
+
+    #anchor {
+
+      position: absolute;
+      top: -50%;
+    }
+    #sectionThree {
+
+      position: relative;
+      background-color: rgba(255,255,255,0);
+      width: 100%;
+      height: 50%;
+      top: 120%;
+    }
+
+    #title3 {
+
+      position: absolute;
+      color: rgba(19,41,75,0.8);
+      left: 60%;
+      top: 15%;
+      font-family: "arial";
+      font-size: 300%;
+    }
+
+    #rant {
+
+      position: absolute;
+      font-size: 225%;
+      top: 60%;
+      left: 57.5%;
+      width: 40%;
+    }
+
+    #network {
+
+      position: absolute;
+      left: 5%;
+      top: 20%;
+    }
+
+    #popup {
+
+      position: absolute;
+      left: 5%;
+      top: 10%;
+      height: 20%;
+      color: orange;
+      font-size: 150%;
+      opacity: 0;
+      z-index: 150;
+    }
+
+    #popup > a:hover {
+
+      animation-name: expand2;
+      animation-duration: 1000ms;
+      animation-iteration-count: 1;
+    }
+
+    @keyframes expand2 {
+      0%{font-size: 150%; left: 5%}
+      50%{font-size: 200%; left: 2.5%}
+      100%{font-size: 150%; left: 5%}
+    }
+
+    @keyframes appear {
+
+      0%{opacity:0}
+      100%{opacity:1}
+    }
+
+    #table {
+
+      position: absolute;
+      top: 160%;
+      font-size: 100%;
+      left: 5%;
+      font-family: "arial";
+    }
+
+    .label {
+
+      color: orange;
+      font-size: 200%;
+      font-family: "arial";
+    }
+
+    .label1 {
+
+      font-size: 150%;
+      width: 80%;
+    }
+
+    #intro {
+
+      position: absolute;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      width: 90%;
+      top: 300%;
+      left: 5%;
+      font-family: arial;
+      font-size: 200%;
+      color: rgba(19,41,75,0.8);
+    }
+
+    #intro > a:hover {
+
+      animation-name: expand;
+      animation-duration: 1000ms;
+      animation-iteration-count: 1;
+    }
+
+    #us {
+
+      position: absolute;
+      color: rgba(19,41,75,0.8);
+      top: 250%;
+      left: 45%;
+      font-family: "arial";
+      font-size: 300%;
+    }
+
+    #credit {
+
+      position: absolute;
+      left: 10%;
+      top: 600%;
+      font-family: "arial";
+      font-size: 300%;
+    }
+
+    #pp {
+
+      position: inherit;
+      top: -150%;
+    }
+
+
+  </style>
+
+  <!-- Section 4 -->
+
+  <style>
+
+
+
+      #sectionFour {
+
+        position: absolute;
+        background-color:rgba(19,41,75,.5);
+        width: 100%;
+        height: 50%;
+        top: 100%;
+      }
+
+    #do {
+
+      position: absolute;
+      background-color: rgba(0,0,0,0.05);
+      width: 100%;
+      height: 50%;
+      top: 100%;
+    }
+
+
+
+
+  </style>
+
+  <script>
+
+    const CANVAS = document.getElementById("canvas");
+    const c = CANVAS.getContext("2d");
+    CANVAS.width = window.innerWidth;
+    CANVAS.height = window.innerHeight;
+
+
+    window.onscroll = () => { scroll(); };
+
+    function scroll() {
+
+      toggleUpButton(window.pageYOffset);
+    }
+
+    function toggleUpButton(num) {
+
+      if(num > 0)
+        document.getElementById("backToTop").style.opacity = 1;
+      else
+        document.getElementById("backToTop").style.opacity = 0;
+    }
+
+    const WH = screen.height; //window height
+
+
+    const mouse = {
+
+        x: null,
+        y: null,
+        radius: (CANVAS.height / 120) * (CANVAS.width / 120),
+    }
+
+    function popup() {
+
+      if(document.getElementById("popup").style.opacity == 0) {
+        document.getElementById("popup").style.animationName = "appear";
+        document.getElementById("popup").style.animationDuration = 5000 + "ms";
+        document.getElementById("popup").style.animationIterationCount = 1;
+        document.getElementById("popup").style.opacity = 1;
+
+        document.getElementById("popup").style.animationName = "appear";
+        document.getElementById("popup").style.animationDuration = 5000 + "ms";
+        document.getElementById("popup").style.animationIterationCount = 1;
+      }
+    }
+
+
+
+    window.addEventListener("mousemove", (event) => {
+
+        mouse.x = event.x;
+        mouse.y = event.y;
+    });
+
+    let array;
+
+    class Particle {
+
+        constructor(x, y, dx, dy, radius, color) {
+
+            this.x = x;
+            this.y = y;
+            this.dx = dx;
+            this.dy = dy;
+            this.radius = radius;
+            this.color = color;
+        }
+
+        draw() {
+
+            c.beginPath();
+            c.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+            c.fillStyle = this.color;
+            c.fill();
+        }
+
+        bubbles() {
+
+          if(this.x > CANVAS.width + this.radius || this.x - this.radius < 0)
+                  this.dx *= -1;
+          if(this.y - this.radius < 0) {
+              this.y = innerHeight * 1.1;
+              this.x = Math.random() * (innerWidth - this.radius * 4) + this.radius * 2;
+              this.dx = Math.random() * 5 - 2.5;
+              this.dy = Math.random() * -6;
+          }
+
+          if(this.dy > -.5)
+              this.dy -= 0.1;
+
+          let dx = mouse.x - this.x;
+          let dy = mouse.y - this.y;
+
+          let distance = Math.sqrt( Math.pow( dx, 2 ) + Math.pow( dy, 2 ) );
+
+          if(this.radius + mouse.radius >= distance) {
+
+              let push = (distance / (mouse.radius + this.radius) * 10);
+
+              let angle = Math.atan(dy / dx);
+              if(dx < 0) {
+                  angle += Math.PI;
+              }
+
+              this.dx = this.dx + (push / 15 * Math.cos(angle));
+              this.dy = this.dy + (push / 15 * Math.sin(angle));
+          }
+
+          this.x += 2 * Math.cos(this.y / 5)
+
+          //"Friction" - slow down the balls if too fast
+          if(this.dx > 3)
+              this.dx -= 0.1;
+          else if(this.dx < -3)
+              this.dx += 0.1;
+          if(this.dy > 5)
+              this.dy -= 0.1;
+          else if(this.dy < -5)
+              this.dy += 0.1;
+
+          this.x += this.dx;
+          this.y += this.dy;
+
+          this.draw();
+        }
+
+        update() {
+
+            if(this.x > CANVAS.width + this.radius || this.x - this.radius < 0)
+                this.dx *= -1;
+            if(this.y > CANVAS.height + this.radius || this.y - this.radius < 0)
+                this.dy *= -1;
+
+            let dx = mouse.x - this.x;
+            let dy = mouse.y - this.y;
+
+            let distance = Math.sqrt( Math.pow( dx, 2 ) + Math.pow( dy, 2 ) );
+
+            if(this.radius + mouse.radius >= distance) {
+                let push = 1 - (distance / (mouse.radius + this.radius) * 10); //remove the "1 - " part to make a black-hole effect
+
+                let angle = Math.atan(dy / dx);
+                if(dx < 0) {
+                    angle += Math.PI;
+                }
+
+                this.dx = this.dx + (push / 15 * Math.cos(angle));
+                this.dy = this.dy + (push / 15 * Math.sin(angle));
+            }
+
+            //"Friction" - slow down the balls if too fast
+            if(this.dx > 3)
+                this.dx -= 0.1;
+            else if(this.dx < -3)
+                this.dx += 0.1;
+            if(this.dy > 3)
+                this.dy -= 0.1;
+            else if(this.dy < -3)
+                this.dy += 0.1;
+
+            this.x += this.dx;
+            this.y += this.dy;
+
+            this.draw();
+        }
+    }
+
+    function drawLines() {
+
+        for(let a = 0; a < array.length; a++) {
+
+            for(let b = 0; b < array.length; b++) {
+
+                if(a == b)
+                    continue;
+                // if(Math.random() * (WH * 1.5 / window.pageYOffset) > 1)
+                //   continue;
+                let distance = Math.sqrt( Math.pow( array[a].x - array[b].x, 2 ) + Math.pow( array[a].y - array[b].y, 2) );
+
+                if(distance < (CANVAS.width / 70) * (CANVAS.height / 70)) {
+
+                    c.moveTo(array[a].x, array[a].y);
+                    c.lineTo(array[b].x, array[b].y);
+                    c.strokeStyle = "black";
+                    c.stroke();
+                }
+            }
+        }
+    }
+
+
+    function init() {
+
+        array = [];
+        let num = (CANVAS.height * CANVAS.width) / 18000;
+
+      if(innerWidth > 1500)
+        num = 40;
+      //let num = 100;
+        for(let i = 0; i < num; i++) {
+
+            let size = (Math.random() * 5) + 1;
+            let x = (Math.random() * (CANVAS.width - 2 * size)) + size;
+            let y = (Math.random() * (CANVAS.height - 2 * size)) + size;
+            let dx = (Math.random() * 5) - 2.5;
+            let dy = (Math.random() * 5) - 2.5;
+            let color = "black";
+
+            array.push(new Particle(x, y, dx, dy, size, color));
+        }
+    }
+
+    let rad = 0.01;
+    function animage() {
+
+        requestAnimationFrame(animage);
+        c.clearRect(0,0,innerWidth, innerHeight);
+
+        if(window.pageYOffset > WH && window.pageYOffset < WH * 1.25)
+          for(let i = 0; i < array.length; i++)
+              if(Math.random() < 0.5)
+                array[i].bubbles();
+              else
+                array[i].update();
+        else if(window.pageYOffset > WH * 1.25)
+            for(let i = 0; i < array.length; i++)
+            array[i].bubbles();
+        else
+          for(let i = 0; i < array.length; i++)
+              array[i].update();
+        drawLines();
+        c.fillStyle="rgba(0,0,0,0.2)";
+        c.fillRect(0,0,innerWidth,innerHeight);
+        c.fillStyle="black";
+
+        rad += 0.01;
+        c.save();
+        c.transform(1,1,1,1,CANVAS.width/2, CANVAS.height/2);
+        c.rotate(rad);
+        c.restore();
+
+    }
+
+    init();
+    animage();
+  </script>
+</html>
